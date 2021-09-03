@@ -1,0 +1,38 @@
+package com.example;
+
+public class Movie {
+	
+	private static final String OPERA_NAME="INOX";
+	private static int id=0;
+	private String movieId;
+	private String movieName;
+	private Genre genre;
+	private boolean isAvailable;
+	public Movie() {
+		super();
+		++id;
+		
+	}
+	public static int getStaticId()
+	{
+		return id;
+	}
+	
+	
+	public Movie(String movieId, String movieName, Genre genre, boolean isAvailable) {
+		super();
+		this.movieId = movieId;
+		this.movieName = movieName;
+		this.genre = genre;
+		this.isAvailable = isAvailable;
+		++id;
+	}
+
+	public  String getDetails()
+	{
+		return "ID: "+id+"Movie ID: "+movieId +" Movie name: "+movieName+" Genre: "+genre+" Opera Name: "+OPERA_NAME+" Available? "+isAvailable;
+	}
+	
+	
+
+}

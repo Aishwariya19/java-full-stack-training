@@ -1,0 +1,27 @@
+package com.example;
+
+public class CD {
+
+    private int cdId;
+    private String cdName;
+    private boolean isAvailable;
+
+	public CD() {
+
+	}
+
+	public CD(int cdId, String cdName, boolean isAvailable) {
+
+		this.cdId = cdId;
+		this.cdName = cdName;
+		this.isAvailable = isAvailable;
+	}
+
+	public String getDetails() {
+		return "CD ID: " + cdId + " CD Name: " + cdName+" available? "+isAvailable;
+	}
+
+	
+
+	
+}

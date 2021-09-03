@@ -1,0 +1,8 @@
+package com.example;
+//<access modifier>*<class> *<ClassName>
+public class ToDo {
+	//attribute of a class<modifier>
+	  public String todoName;
+	  public boolean isCompleted;
+	  public String assigneeName;
+}
