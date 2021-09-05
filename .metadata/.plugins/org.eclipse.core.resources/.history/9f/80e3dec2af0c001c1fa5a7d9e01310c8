@@ -1,0 +1,18 @@
+package com.fly;
+
+public class Kryptonian extends Animal {
+
+	@Override
+	public void eats() {
+		// TODO Auto-generated method stub
+		super.eats();
+	}
+
+	@Override
+	public void getDetails() {
+		// TODO Auto-generated method stub
+		super.getDetails();
+	}
+	
+
+}

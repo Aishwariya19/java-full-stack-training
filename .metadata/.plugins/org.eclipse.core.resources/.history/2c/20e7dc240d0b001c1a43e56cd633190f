@@ -1,0 +1,58 @@
+package com.example;
+
+public class Employee {
+
+	  public int employeeId;
+	  public String employeeName;
+	  public String employeeLocation;
+	  
+	public Employee() {
+		//super();
+	}
+
+	public Employee(int employeeId, String employeeName, String employeeLocation) {
+		super();
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
+		this.employeeLocation = employeeLocation;
+	}
+	
+	public void createEmployee(int employeeId, String employeeName, String employeeLocation)
+	{
+		this.employeeId = employeeId;
+		this.employeeName = employeeName;
+		this.employeeLocation = employeeLocation;
+	}
+	
+	public String displayEmployeeDetails()
+	{
+		return "employee id: "+employeeId+" employee name: "+employeeName+" employee Location: "+employeeLocation;
+	}
+
+	
+	  
+	@Override
+	public String toString() {
+		
+		return "Employee Name-> " + employeeName + " Employee Location-> " + employeeLocation;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		
+		Employee tempEmployee = (Employee) obj;
+		if ((this.employeeName == tempEmployee.employeeName) && (this.employeeLocation.equals(tempEmployee.employeeLocation))
+				) {
+			return true;
+		} else {
+			System.out.println(this.employeeName+ tempEmployee.employeeName+this.employeeLocation+tempEmployee.employeeLocation);
+		
+			return false;
+		}
+
+	}
+
+
+}
+
+

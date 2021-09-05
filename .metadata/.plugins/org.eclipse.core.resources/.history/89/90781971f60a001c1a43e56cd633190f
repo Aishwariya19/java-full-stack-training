@@ -1,0 +1,26 @@
+
+package com.example;
+
+public class RegularEmployee extends Employee{
+	
+	private int salaryDouble;
+
+	public RegularEmployee() {
+		super();
+	}
+
+	public RegularEmployee(int employeeId, String employeeName, String employeeLocation, String salaryDouble) {
+		
+		super(employeeId,employeeName,employeeLocation);
+		this.salaryDouble = salaryDouble;
+	}
+
+
+	@Override
+	public String displayEmployeeDetails() {
+		// TODO Auto-generated method stub
+		return super.displayEmployeeDetails() +" salary: "+salaryDouble;
+	}
+	
+
+}

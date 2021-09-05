@@ -1,0 +1,13 @@
+package com.fly;
+
+public class SeaPlane extends AirPlane implements Flyer {
+	
+	
+	@Override
+	public void getDetails() {
+		// TODO Auto-generated method stub
+		super.getDetails();
+		System.out.println("hello i am Sea Plane");
+	}
+
+}

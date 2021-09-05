@@ -1,0 +1,13 @@
+package com.fly;
+
+public class Kryptonian extends Animal {
+
+	/*
+	 * @Override public void eats() { System.out.println("Kryptonian eats"); }
+	 * 
+	 * @Override public void getDetails() { // TODO Auto-generated method stub
+	 * super.getDetails(); }
+	 */
+	
+
+}

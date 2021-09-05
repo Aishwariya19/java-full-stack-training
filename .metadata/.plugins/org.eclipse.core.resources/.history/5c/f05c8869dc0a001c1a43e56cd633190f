@@ -1,0 +1,10 @@
+package com.example;
+
+public class Country {
+	private int countryId;
+	private string countryName;
+	private string countryCapital;
+	
+	public 
+
+}

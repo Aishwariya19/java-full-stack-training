@@ -1,0 +1,31 @@
+package com.app;
+import java.util.Scanner;
+import com.example.Movie;
+
+
+public class UserInput {
+	private Scanner scanner=new Scanner(System.in);
+	
+	public Movie createUserInput()
+	{
+		System.out.print("Movie id: ");
+		String id=scanner.next();
+		System.out.println("Movie name: " );
+		String name=scanner.next();
+		/*
+		 * System.out.print("Genre: "); 
+		 * String line1=scanner.next();
+		 */
+		
+		Movie movie=new Movie();
+		
+		movie.setMovieId(id);
+		movie.setMovieName(name);
+		
+		return movie;
+	}
+	
+	
+	
+
+}

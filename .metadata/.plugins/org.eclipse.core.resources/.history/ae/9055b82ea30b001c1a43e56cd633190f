@@ -1,0 +1,99 @@
+package com.example;
+
+import java.util.Objects;
+
+public class customer {
+
+	private int customerId;
+	private String customerName;
+	
+	private Address address;
+
+	public customer() {
+		//super();
+	}
+
+	public customer(int customerId, String customerName, Address address) {
+		super();
+		this.customerId = customerId;
+		this.customerName = customerName;
+		this.address = address;
+	}
+
+
+	/**
+	 * @return the customerId
+	 */
+	public int getCustomerId() {
+		return customerId;
+	}
+
+	/**
+	 * @param customerId the customerId to set
+	 */
+	public void setCustomerId(int customerId) {
+		this.customerId = customerId;
+	}
+
+	/**
+	 * @return the customerName
+	 */
+	public String getCustomerName() {
+		return customerName;
+	}
+
+	/**
+	 * @param customerName the customerName to set
+	 */
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+
+	/**
+	 * @return the address
+	 */
+	public Address getAddress() {
+		return address;
+	}
+
+	/**
+	 * @param address the address to set
+	 */
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+	
+	
+
+	/*
+	 * @Override public String toString() { return "Employee [employeeId=" +
+	 * employeeId + ", firstName=" + firstName + ", lastName=" + lastName +
+	 * ", email=" + email + ", address=" + address + "]"; }
+	 */
+
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return super.toString();
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(address, customerId, customerName);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (!(obj instanceof customer)) {
+			return false;
+		}
+		customer other = (customer) obj;
+		return Objects.equals(address, other.address) && customerId == other.customerId
+				&& Objects.equals(customerName, other.customerName);
+	}
+	
+	
+}

@@ -1,0 +1,26 @@
+
+package com.example;
+
+public class HourlyPaidEmployee extends Employee{
+	
+	private int ratePerHour;
+
+	public HourlyPaidEmployee() {
+		super();
+	}
+
+	public HourlyPaidEmployee(int employeeId, String employeeName, String employeeLocation, int ratePerHour) {
+		super(employeeId,employeeName,employeeLocation);
+		this.ratePerHour=ratePerHour;
+		
+	}
+	
+	@Override
+	public String displayEmployeeDetails() {
+		
+		return super.displayEmployeeDetails()+" rate  Per Hour: "+ratePerHour;
+	}
+	
+	
+
+}

@@ -1,0 +1,33 @@
+
+package com.example;
+
+public class HourlyPaidEmployee extends Employee{
+	
+	private int noOfHour;
+	private int ratePerHour;
+	private int salary;
+
+	public HourlyPaidEmployee() {
+		super();
+	}
+
+	public HourlyPaidEmployee(int employeeId, String employeeName, String employeeLocation, int ratePerHour,int noOfHour,int salary) {
+		super(employeeId,employeeName,employeeLocation);
+		this.ratePerHour=ratePerHour;
+		this.noOfHour=noOfHour;
+		this.salary=ratePerHour*noOfHour;
+		
+		
+	}
+	
+	
+	
+	@Override
+	public String displayEmployeeDetails() {
+		
+		return super.displayEmployeeDetails()+" salary: "+salary;
+	}
+	
+	
+
+}

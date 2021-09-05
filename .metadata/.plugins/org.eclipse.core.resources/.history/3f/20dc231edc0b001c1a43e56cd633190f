@@ -1,0 +1,19 @@
+package com.example;
+
+public enum Genre {
+	
+	ROMANTIC("This is a romantic movie"),
+	HORROR("This is a horror movie"),
+	SCIENCE_FICTION("This is a science fiction movie");
+
+	private String message;
+	private Genre(String message) {
+		this.message=message;
+		
+	}
+	public String getMessage() {
+		return message;
+	}
+
+}
+

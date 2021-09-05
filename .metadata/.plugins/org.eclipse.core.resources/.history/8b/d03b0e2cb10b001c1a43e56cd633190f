@@ -1,0 +1,30 @@
+
+package com.app;
+
+import com.model.Address;
+import com.model.Customer;
+
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Customer customer=new Customer();
+		customer.setCustomerId(100);
+		customer.setCustomerName("John");
+		
+		Address address=new Address();
+		address.setAddressLine1("Chennai");
+		address.setAddressLine2("Kerala");
+		address.setCountry("India");
+		address.setCity("Kannur");
+		address.setMobileNo("9495283624");
+		
+		customer.setAddress(address);
+		System.out.println(customer);
+		
+		
+		
+	}
+
+}

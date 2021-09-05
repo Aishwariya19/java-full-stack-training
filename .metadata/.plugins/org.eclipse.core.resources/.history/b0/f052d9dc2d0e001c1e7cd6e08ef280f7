@@ -1,0 +1,30 @@
+package com.fly;
+
+public class Helicopter extends AirPlane implements Flyer {
+	
+	@Override
+	public void takeOff() {
+		System.out.println("Helicopter takingoff");
+		
+	}
+
+	@Override
+	public void land() {
+		System.out.println("Helicopter landing");
+		
+	}
+
+	@Override
+	public void fly() {
+		System.out.println("Helicopter flying");
+		
+	}
+
+	@Override
+	public void getDetails() {
+		// TODO Auto-generated method stub
+		super.getDetails();
+		System.out.println("hello i am Helicopter");
+	}
+
+}

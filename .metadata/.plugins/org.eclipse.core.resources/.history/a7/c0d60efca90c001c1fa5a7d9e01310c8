@@ -1,0 +1,37 @@
+package com.fly;
+
+import com.fly.AirPlane;
+import com.fly.Animal;
+import com.fly.Bird;
+import com.fly.Flyer;
+import com.fly.Helicopter;
+import com.fly.Kryptonian;
+import com.fly.SeaPlane;
+import com.fly.Vehicle;
+import com.fly.Superman;
+
+public class Main  {
+
+	public static void main(String args[])
+	{
+		Flyer myFlyer=null;
+		myFlyer=new Superman();
+		myFlyer.land();
+		myFlyer.takeOff();
+		myFlyer.fly();
+		Flyer.getDetails();
+		myFlyer=new Bird();
+		myFlyer.land();
+		myFlyer.takeOff();
+		myFlyer.fly();
+		Bird myBird=null;
+		myBird.eat();
+		
+		Flyer.getDetails();
+		myFlyer=new AirPlane();
+		myFlyer.land();
+		myFlyer.takeOff();
+		myFlyer.fly();
+		Flyer.getDetails();
+	}
+}

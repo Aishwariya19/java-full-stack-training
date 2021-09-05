@@ -1,0 +1,21 @@
+package org.example;
+import com.example.Employee;
+import com.example.RegularEmployee;
+import com.example.HourlyPaidEmployee;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Employee myEmployee=null;
+		
+		myEmployee1 = new RegularEmployee(1,"Ramu","kerala",834);
+		System.out.println(myEmployee1.displayEmployeeDetails());
+		myEmployee2=new HourlyPaidEmployee(2,"Rama","Kerala",2,300);
+		System.out.println(myEmployee2.displayEmployeeDetails());
+		
+		System.out.println(myEmployee1.equals(myEmployee2));
+
+	}
+}
+
+	

@@ -1,0 +1,19 @@
+package com.example;
+
+import java.util.UUID;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Item myItem=new Item();
+		myItem.setItemId(UUID.randomUUID().toString());
+		myItem.setItemName("Laptop");
+		myItem.setItemType(ItemType.CONSUMER_ELECTRONICS);
+		
+		System.out.println("Displaying Item details:=====\n");
+		System.out.println("Item ID: "+myItem.getItemId()+"\nItem Name: "+myItem.getItemName()+"\nItem Type: "+myItem.getItemType().getMessage());
+
+	}
+
+}

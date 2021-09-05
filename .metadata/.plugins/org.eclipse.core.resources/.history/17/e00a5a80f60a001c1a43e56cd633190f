@@ -1,0 +1,27 @@
+package org.example;
+import com.example.Employee;
+import com.example.RegularEmployee;
+import com.example.HourlyPaidEmployee;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		/*
+		 * Country country=new Country();
+		 * System.out.println(country.displayCountryDetails());
+		 */
+		
+		Employee myEmployee=null;
+		// dynamic method dispatching
+		myEmployee = new RegularEmployee(1,"Ramu","kerala","salaryDouble");
+		System.out.println(myEmployee.displayEmployeeDetails());
+		myEmployee=new HourlyPaidEmployee(2,"Rama","Kerala",23);
+		System.out.println(myEmployee.displayEmployeeDetails());
+		
+		
+
+	}
+
+}
+
+

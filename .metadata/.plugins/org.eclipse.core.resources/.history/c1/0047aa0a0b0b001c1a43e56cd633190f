@@ -1,0 +1,22 @@
+package org.example;
+import com.example.Employee;
+import com.example.RegularEmployee;
+import com.example.HourlyPaidEmployee;
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Employee myEmployee=null;
+		
+		myEmployee = new RegularEmployee(1,"Ramu","kerala",234);
+		System.out.println(myEmployee.displayEmployeeDetails());
+		myEmployee=new HourlyPaidEmployee(2,"Rama","Kerala",2,30);
+		System.out.println(myEmployee.displayEmployeeDetails());
+		
+		
+
+	}
+
+}
+
+
